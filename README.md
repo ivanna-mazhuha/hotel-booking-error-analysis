@@ -38,20 +38,17 @@ Example transformation: "Booking Create Error: Brak możliwości założenia rez
 
 ## 📈 Dashboard Pages
 ### 1. Overview
-[Screenshot + 1 sentence on what it shows]
+
 ### 2. Root Cause Analysis
-[Screenshot + 1 sentence]
+
 ### 3. Action Plan
-[Screenshot + 1 sentence]
+
 
 ## 💡 Key Insights
-[Fill in at the very end, based on what the matrix/decomposition tree actually showed]
 - 
 
 ## 🛠️ Tools Used
 Power BI, Power Query (M), DAX
 
 ## 📁 How to Open
-1. Download `.pbix` file
-2. Open in Power BI Desktop
-3. [Any refresh/data source notes]
+
