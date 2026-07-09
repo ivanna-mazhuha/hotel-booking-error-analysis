@@ -19,19 +19,20 @@ Note: dataset contains only FAILED booking attempts — no success data, so metr
 
 ## 🧹 Data Cleaning (Power Query)
 - Inconsistent price formats (comma decimals, "PLN" suffix, missing values) → standardized to Decimal Number.
-- Duplicate rows (~1.5%) → removed via Remove Duplicates.
 - Standardized error messages: translated mixed Polish/English text to English, removed redundant technical prefixes (e.g. "Booking Create 
   Error:"), and extracted clean error descriptions into a separate dimension table (`dim_error_types`).
 Example transformation: "Booking Create Error: Brak możliwości założenia rezerwacji winterfejsie." → "Unable to create a reservation in interface"
 - Removed `hotelcode` column from the fact table — redundant with `Hotel ID`, which already serves as the unique key linking to `dim_hotels`
 - Missing Error ID values → resolved via Merge Queries with clean error reference table.
+- Extracted unique client emails into a separate `dim_client` dimension table (with surrogate Client ID), replacing raw email in the fact table — enables accurate distinct-client counting and avoids duplicated email text across ~5,000 fact rows
 - Identified rows that are fully identical across all fields (Trip ID, Reservation Date, Error ID, Price). Because the dataset only records
   date (not timestamp), these cannot be reliably distinguished between (a) technical log duplication or (b) a genuine same-day repeat attempt 
   by the same client. Given this ambiguity, these rows were NOT removed, to avoid understating real repeat-attempt volume.
 - Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component)
 
 ## 🗂️ Data Model
-<img width="1220" height="727" alt="image" src="https://github.com/user-attachments/assets/901bf0ba-2dbb-4f96-a51f-97b3a39a6fb8" />
+<img width="1596" height="732" alt="image" src="https://github.com/user-attachments/assets/2f7bd287-a607-415e-8be3-c31c9520b336" />
+
 
 - Star schema: fact table `fact_booking_errors` + dimensions `dim_hotels`, `dim_providers`, `dim_error_types`, `dim_date`
 - Removed `MainDestination` from `dim_providers` to avoid duplicating geographic data already present in `dim_hotels[Country]` (single source of truth principle)
