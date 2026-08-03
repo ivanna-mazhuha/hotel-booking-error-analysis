@@ -1,0 +1,501 @@
+﻿hotelid,HotelName,ProviderName,Country,Region,City,Stars
+1027,Hilton Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,5
+1043,Atlantica Ayia Napa,Restel,Cyprus,Famagusta District,Ayia Napa,3
+1058,Rixos Antalya,Summer Tour,Turkey,Antalya Province,Antalya,5
+1090,Radisson Blu Porec,Go2Holiday,Croatia,Istria County,Porec,4
+1117,Bahia Principe Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,4
+1128,Barut Hotels Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,4
+1152,Barut Hotels Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,4
+1158,Rixos Alanya Resort,Summer Tour,Turkey,Antalya Province,Alanya,5
+1200,Pine Cliffs Lisbon Resort,WebBeds,Portugal,Lisbon District,Lisbon,4
+1207,Mangia's Resorts Sardinia Resort,Miki Travel,Italy,Sardinia,Sardinia,4
+1231,Vidamar Resorts Vilamoura Resort,WebBeds,Portugal,Algarve,Vilamoura,5
+1282,Dom Pedro Cascais,WebBeds,Portugal,Lisbon District,Cascais,5
+1317,NH Collection Sardinia,Miki Travel,Italy,Sardinia,Sardinia,4
+1333,Bluserena Rome,Miki Travel,Italy,Lazio,Rome,5
+1339,Olympic Lagoon Limassol Resort,Restel,Cyprus,Limassol District,Limassol,4
+1344,Meliá Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,4
+1387,Address Hotels Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,4
+1420,NH Collection Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,4
+1423,Constantinou Bros Protaras Resort,Restel,Cyprus,Famagusta District,Protaras,4
+1452,Ajman Saray Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,3
+1508,NH Collection Rome,Miki Travel,Italy,Lazio,Rome,5
+1514,H10 Hotels Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,4
+1525,Baron Resort Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+1534,Louis Hotels Larnaca,Restel,Cyprus,Larnaca District,Larnaca,5
+1626,Marriott Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+1634,Hilton Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,4
+1653,Louis Hotels Larnaca Resort,Restel,Cyprus,Larnaca District,Larnaca,5
+1659,Baglioni Hotels Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,4
+1672,Rocco Forte Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,5
+1722,Rixos Kemer,Summer Tour,Turkey,Antalya Province,Kemer,5
+1727,Jumeirah Sharjah Resort,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+1745,Vila Vita Parc Cascais Resort,WebBeds,Portugal,Lisbon District,Cascais,4
+1750,Rixos Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,3
+1771,Jaz Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,4
+1822,Valamar Porec,Go2Holiday,Croatia,Istria County,Porec,4
+1828,RIU Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,5
+1832,Barut Hotels Side,Summer Tour,Turkey,Antalya Province,Side,4
+1841,Dom Pedro Lisbon Resort,WebBeds,Portugal,Lisbon District,Lisbon,5
+1853,Mangia's Resorts Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,4
+1887,Occidental Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,5
+1893,Vidamar Resorts Funchal (Madeira) Resort,WebBeds,Portugal,Madeira,Funchal (Madeira),3
+1916,Hilton Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,5
+1964,Iberostar Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,3
+1977,Constantinou Bros Paphos Resort,Restel,Cyprus,Paphos District,Paphos,4
+1993,Barceló Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,4
+2040,Coral Sea Marsa Alam Resort,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,4
+2049,Barceló Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,5
+2052,Radisson Blu Makarska Resort,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,4
+2070,Vila Vita Parc Lisbon Resort,WebBeds,Portugal,Lisbon District,Lisbon,3
+2084,Pickalbatros Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+2104,Iberostar Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,4
+2124,NH Collection Sicily,Miki Travel,Italy,Sicily,Sicily,4
+2127,Limak Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,4
+2129,Th Resorts Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,3
+2137,Ajman Saray Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+2139,Dana Beach Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+2146,Marriott Ras Al Khaimah Resort,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,5
+2160,NH Collection Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,4
+2163,Barceló Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,5
+2166,Anassa Ayia Napa,Restel,Cyprus,Famagusta District,Ayia Napa,5
+2169,Pickalbatros Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,4
+2188,Voyage Kemer,Summer Tour,Turkey,Antalya Province,Kemer,5
+2193,Amadria Park Rovinj,Go2Holiday,Croatia,Istria County,Rovinj,4
+2200,Voyage Belek,Summer Tour,Turkey,Antalya Province,Belek,4
+2229,Constantinou Bros Ayia Napa,Restel,Cyprus,Famagusta District,Ayia Napa,5
+2235,Iberostar Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,3
+2245,Mangia's Resorts Venice,Miki Travel,Italy,Veneto,Venice,4
+2269,Amadria Park Zadar Resort,Go2Holiday,Croatia,Zadar County,Zadar,5
+2307,Dana Beach Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,4
+2317,Atlantica Protaras Resort,Restel,Cyprus,Famagusta District,Protaras,4
+2320,Bluesun Split Resort,Go2Holiday,Croatia,Split-Dalmatia County,Split,5
+2330,Olympic Lagoon Protaras,Restel,Cyprus,Famagusta District,Protaras,5
+2341,UNA Hotels Venice,Miki Travel,Italy,Veneto,Venice,5
+2489,Jaz Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,4
+2494,Amara Paphos Beach,Restel,Cyprus,Paphos District,Paphos,5
+2496,Anassa Ayia Napa Resort,Restel,Cyprus,Famagusta District,Ayia Napa,5
+2512,Voyage Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,4
+2524,Pestana Lisbon,WebBeds,Portugal,Lisbon District,Lisbon,5
+2545,Meliá Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,5
+2588,NH Collection Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,4
+2604,NH Collection Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,4
+2612,Occidental Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,5
+2625,Constantinou Bros Paphos,Restel,Cyprus,Paphos District,Paphos,3
+2638,Crystal Hotels Belek,Summer Tour,Turkey,Antalya Province,Belek,4
+2647,Pine Cliffs Cascais,WebBeds,Portugal,Lisbon District,Cascais,5
+2654,Sunrise Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,5
+2669,Bluserena Venice,Miki Travel,Italy,Veneto,Venice,5
+2680,Pestana Porto Resort,WebBeds,Portugal,Porto District,Porto,4
+2697,Limak Antalya,Summer Tour,Turkey,Antalya Province,Antalya,4
+2729,UNA Hotels Venice Resort,Miki Travel,Italy,Veneto,Venice,3
+2746,Amadria Park Makarska,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,5
+2753,Voyage Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,5
+2771,Rocco Forte Venice,Miki Travel,Italy,Veneto,Venice,3
+2776,Radisson Blu Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,5
+2790,RIU Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,4
+2796,Sunwing Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,3
+2832,Limak Belek Resort,Summer Tour,Turkey,Antalya Province,Belek,4
+2869,Pine Cliffs Albufeira Resort,WebBeds,Portugal,Algarve,Albufeira,4
+2874,Valtur Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,5
+2876,UNA Hotels Rome,Miki Travel,Italy,Lazio,Rome,5
+2880,Olympic Lagoon Ayia Napa,Restel,Cyprus,Famagusta District,Ayia Napa,4
+2889,Marriott Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+2891,Delphin Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,5
+2894,Rotana Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,4
+2958,Tivoli Funchal (Madeira),WebBeds,Portugal,Madeira,Funchal (Madeira),5
+2976,Vidamar Resorts Albufeira,WebBeds,Portugal,Algarve,Albufeira,3
+2982,Meliá Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,5
+2983,Valtur Rome,Miki Travel,Italy,Lazio,Rome,5
+2988,Radisson Blu Makarska,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,5
+3037,Anassa Paphos Resort,Restel,Cyprus,Paphos District,Paphos,4
+3041,Marriott Fujairah Resort,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,5
+3068,UNA Hotels Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,3
+3073,Dom Pedro Vilamoura Resort,WebBeds,Portugal,Algarve,Vilamoura,3
+3085,Ajman Saray Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,4
+3143,Crystal Hotels Antalya Resort,Summer Tour,Turkey,Antalya Province,Antalya,5
+3144,Barut Hotels Alanya,Summer Tour,Turkey,Antalya Province,Alanya,4
+3167,Bahia Principe Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,4
+3170,Maxx Royal Side,Summer Tour,Turkey,Antalya Province,Side,4
+3184,Sun Gardens Rovinj,Go2Holiday,Croatia,Istria County,Rovinj,5
+3200,Titanic Belek,Summer Tour,Turkey,Antalya Province,Belek,4
+3266,Dana Beach Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,5
+3267,Amadria Park Porec Resort,Go2Holiday,Croatia,Istria County,Porec,5
+3287,Steigenberger Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,5
+3296,Bahia Principe Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,4
+3330,Louis Hotels Limassol,Restel,Cyprus,Limassol District,Limassol,4
+3340,Sunwing El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,5
+3417,Valamar Dubrovnik,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,5
+3441,Amara Limassol,Restel,Cyprus,Limassol District,Limassol,4
+3471,Falkensteiner Zadar Resort,Go2Holiday,Croatia,Zadar County,Zadar,4
+3496,Rocco Forte Sicily,Miki Travel,Italy,Sicily,Sicily,4
+3503,Valamar Porec Resort,Go2Holiday,Croatia,Istria County,Porec,4
+3504,Steigenberger Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,4
+3506,Mangia's Resorts Rimini Resort,Miki Travel,Italy,Emilia-Romagna,Rimini,3
+3546,Maxx Royal Antalya,Summer Tour,Turkey,Antalya Province,Antalya,4
+3564,Constantinou Bros Larnaca,Restel,Cyprus,Larnaca District,Larnaca,3
+3573,Anassa Paphos,Restel,Cyprus,Paphos District,Paphos,5
+3584,Delphin Belek,Summer Tour,Turkey,Antalya Province,Belek,4
+3607,Bluesun Dubrovnik,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,4
+3621,Rixos Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,4
+3647,Delphin Alanya Resort,Summer Tour,Turkey,Antalya Province,Alanya,5
+3664,Sunwing Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,3
+3677,Dana Beach Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,3
+3683,Mangia's Resorts Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,3
+3718,Amara Paphos Resort,Restel,Cyprus,Paphos District,Paphos,5
+3749,NH Collection Venice,Miki Travel,Italy,Veneto,Venice,3
+3803,Steigenberger El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,4
+3847,Atlantica Limassol,Restel,Cyprus,Limassol District,Limassol,5
+3851,Ajman Saray Sharjah Resort,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+3870,Amara Ayia Napa Resort,Restel,Cyprus,Famagusta District,Ayia Napa,4
+3881,Falkensteiner Zadar,Go2Holiday,Croatia,Zadar County,Zadar,3
+3885,NH Collection Rimini Resort,Miki Travel,Italy,Emilia-Romagna,Rimini,5
+3925,Rotana Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+3939,Dom Pedro Cascais Resort,WebBeds,Portugal,Lisbon District,Cascais,5
+3973,Atlantica Paphos Resort,Restel,Cyprus,Paphos District,Paphos,4
+4006,Occidental Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,5
+4020,Tivoli Albufeira Resort,WebBeds,Portugal,Algarve,Albufeira,5
+4033,Pestana Funchal (Madeira),WebBeds,Portugal,Madeira,Funchal (Madeira),5
+4114,Hilton Fujairah Resort,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,4
+4116,H10 Hotels Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,5
+4119,Meliá Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,4
+4138,Vidamar Resorts Cascais,WebBeds,Portugal,Lisbon District,Cascais,5
+4139,RIU Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,3
+4143,Marriott Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+4150,Baron Resort Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,3
+4155,Pine Cliffs Albufeira,WebBeds,Portugal,Algarve,Albufeira,4
+4164,Marriott Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,4
+4180,Vila Vita Parc Albufeira Resort,WebBeds,Portugal,Algarve,Albufeira,5
+4185,Radisson Blu Split,Go2Holiday,Croatia,Split-Dalmatia County,Split,4
+4228,Ajman Saray Fujairah Resort,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,3
+4241,Amara Ayia Napa,Restel,Cyprus,Famagusta District,Ayia Napa,5
+4249,Rocco Forte Sardinia,Miki Travel,Italy,Sardinia,Sardinia,4
+4266,Rocco Forte Rome,Miki Travel,Italy,Lazio,Rome,5
+4269,Address Hotels Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,4
+4335,Titanic Alanya,Summer Tour,Turkey,Antalya Province,Alanya,4
+4346,Limak Kemer,Summer Tour,Turkey,Antalya Province,Kemer,4
+4404,Amara Paphos,Restel,Cyprus,Paphos District,Paphos,3
+4432,Steigenberger Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,4
+4450,Crystal Hotels Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,5
+4456,Jaz Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,5
+4457,Olympic Lagoon Larnaca,Restel,Cyprus,Larnaca District,Larnaca,5
+4483,Sunwing Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+4492,Crystal Hotels Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,5
+4505,Radisson Blu Rovinj Resort,Go2Holiday,Croatia,Istria County,Rovinj,4
+4510,NH Collection Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,4
+4545,Pine Cliffs Funchal (Madeira),WebBeds,Portugal,Madeira,Funchal (Madeira),4
+4571,Baglioni Hotels Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,4
+4585,Amadria Park Porec,Go2Holiday,Croatia,Istria County,Porec,4
+4593,Rixos Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,5
+4598,Steigenberger Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+4608,Barceló Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,5
+4630,Dom Pedro Vilamoura,WebBeds,Portugal,Algarve,Vilamoura,5
+4644,Jumeirah Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,5
+4652,Rotana Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,3
+4673,NH Collection Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,4
+4681,Meliá Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,5
+4683,Atlantica Larnaca,Restel,Cyprus,Larnaca District,Larnaca,5
+4727,Pine Cliffs Vilamoura Resort,WebBeds,Portugal,Algarve,Vilamoura,3
+4728,Ajman Saray Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,5
+4733,Jaz El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,5
+4750,Barceló Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,3
+4752,Pickalbatros El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,5
+4770,Occidental Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,4
+4777,Dom Pedro Albufeira,WebBeds,Portugal,Algarve,Albufeira,5
+4788,Falkensteiner Rovinj Resort,Go2Holiday,Croatia,Istria County,Rovinj,3
+4792,Amara Larnaca,Restel,Cyprus,Larnaca District,Larnaca,4
+4814,Dana Beach El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,4
+4824,Olympic Lagoon Limassol,Restel,Cyprus,Limassol District,Limassol,3
+4841,Valamar Makarska Resort,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,5
+4899,H10 Hotels Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,4
+4908,Th Resorts Sardinia,Miki Travel,Italy,Sardinia,Sardinia,4
+4910,Limak Belek,Summer Tour,Turkey,Antalya Province,Belek,5
+4919,Sun Gardens Makarska Resort,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,5
+4929,Louis Hotels Paphos,Restel,Cyprus,Paphos District,Paphos,4
+4937,Vila Vita Parc Albufeira,WebBeds,Portugal,Algarve,Albufeira,4
+4978,Bluserena Sicily,Miki Travel,Italy,Sicily,Sicily,3
+4981,Bahia Principe Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,4
+4986,Vila Vita Parc Cascais,WebBeds,Portugal,Lisbon District,Cascais,5
+4997,Valamar Rovinj,Go2Holiday,Croatia,Istria County,Rovinj,5
+5002,Limak Side,Summer Tour,Turkey,Antalya Province,Side,4
+5010,Rixos El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,3
+5040,Hilton Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,4
+5050,Valamar Split,Go2Holiday,Croatia,Split-Dalmatia County,Split,5
+5051,Th Resorts Sicily,Miki Travel,Italy,Sicily,Sicily,3
+5061,RIU Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,5
+5073,Occidental Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,4
+5082,Radisson Blu Rovinj,Go2Holiday,Croatia,Istria County,Rovinj,4
+5092,H10 Hotels Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,4
+5102,Anassa Limassol Resort,Restel,Cyprus,Limassol District,Limassol,4
+5114,Titanic Kemer,Summer Tour,Turkey,Antalya Province,Kemer,4
+5118,Dom Pedro Lisbon,WebBeds,Portugal,Lisbon District,Lisbon,4
+5133,Th Resorts Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,5
+5136,Dom Pedro Albufeira Resort,WebBeds,Portugal,Algarve,Albufeira,5
+5173,Address Hotels Fujairah Resort,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,5
+5198,Valtur Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,4
+5246,Sun Gardens Dubrovnik,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,3
+5272,Barut Hotels Antalya,Summer Tour,Turkey,Antalya Province,Antalya,5
+5279,Radisson Blu Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,3
+5291,Voyage Antalya Resort,Summer Tour,Turkey,Antalya Province,Antalya,4
+5304,Steigenberger Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,4
+5325,Barut Hotels Belek,Summer Tour,Turkey,Antalya Province,Belek,5
+5333,Voyage Alanya,Summer Tour,Turkey,Antalya Province,Alanya,4
+5334,Amara Protaras,Restel,Cyprus,Famagusta District,Protaras,3
+5335,Louis Hotels Ayia Napa,Restel,Cyprus,Famagusta District,Ayia Napa,5
+5339,Dana Beach Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,5
+5345,Titanic Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,4
+5349,Ajman Saray Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,5
+5351,Maxx Royal Kemer,Summer Tour,Turkey,Antalya Province,Kemer,5
+5352,Atlantica Paphos,Restel,Cyprus,Paphos District,Paphos,4
+5374,Baron Resort Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,3
+5386,Hilton Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,5
+5415,Amara Protaras Resort,Restel,Cyprus,Famagusta District,Protaras,4
+5422,Hilton Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,5
+5425,Baglioni Hotels Amalfi Coast Resort,Miki Travel,Italy,Campania,Amalfi Coast,5
+5438,Vila Vita Parc Vilamoura,WebBeds,Portugal,Algarve,Vilamoura,4
+5451,Valamar Rovinj Resort,Go2Holiday,Croatia,Istria County,Rovinj,4
+5460,Constantinou Bros Larnaca Resort,Restel,Cyprus,Larnaca District,Larnaca,4
+5462,Crystal Hotels Kemer,Summer Tour,Turkey,Antalya Province,Kemer,5
+5494,Vila Vita Parc Porto Resort,WebBeds,Portugal,Porto District,Porto,3
+5499,Bluesun Makarska Resort,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,4
+5530,Dom Pedro Funchal (Madeira),WebBeds,Portugal,Madeira,Funchal (Madeira),5
+5533,Maxx Royal Belek,Summer Tour,Turkey,Antalya Province,Belek,3
+5543,Amadria Park Dubrovnik,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,3
+5554,Rixos Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,4
+5557,Amara Limassol Resort,Restel,Cyprus,Limassol District,Limassol,3
+5558,Mangia's Resorts Sardinia,Miki Travel,Italy,Sardinia,Sardinia,3
+5562,Meliá Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,3
+5563,Iberostar Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,5
+5564,Marriott Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,4
+5573,Ajman Saray Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,5
+5616,Titanic Side,Summer Tour,Turkey,Antalya Province,Side,4
+5632,Anassa Limassol,Restel,Cyprus,Limassol District,Limassol,4
+5636,Pine Cliffs Porto,WebBeds,Portugal,Porto District,Porto,5
+5658,Pestana Cascais Resort,WebBeds,Portugal,Lisbon District,Cascais,3
+5669,Titanic Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,3
+5681,Falkensteiner Porec Resort,Go2Holiday,Croatia,Istria County,Porec,5
+5720,Constantinou Bros Limassol,Restel,Cyprus,Limassol District,Limassol,4
+5728,Louis Hotels Ayia Napa Resort,Restel,Cyprus,Famagusta District,Ayia Napa,3
+5741,Baron Resort Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,3
+5771,Atlantica Protaras,Restel,Cyprus,Famagusta District,Protaras,3
+5786,Pestana Vilamoura Resort,WebBeds,Portugal,Algarve,Vilamoura,4
+5820,Vidamar Resorts Vilamoura,WebBeds,Portugal,Algarve,Vilamoura,5
+5844,Radisson Blu Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,5
+5853,Tivoli Lisbon Resort,WebBeds,Portugal,Lisbon District,Lisbon,4
+5905,Crystal Hotels Side,Summer Tour,Turkey,Antalya Province,Side,3
+5915,Delphin Kemer,Summer Tour,Turkey,Antalya Province,Kemer,5
+5920,Ajman Saray Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+5930,Marriott Sharjah Resort,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+5941,Baglioni Hotels Rome,Miki Travel,Italy,Lazio,Rome,4
+5952,Pestana Lisbon Resort,WebBeds,Portugal,Lisbon District,Lisbon,4
+5956,Limak Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,5
+5982,Atlantica Limassol Resort,Restel,Cyprus,Limassol District,Limassol,4
+6000,Jumeirah Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,4
+6016,Vidamar Resorts Funchal (Madeira),WebBeds,Portugal,Madeira,Funchal (Madeira),3
+6023,Tivoli Albufeira,WebBeds,Portugal,Algarve,Albufeira,5
+6039,Olympic Lagoon Larnaca Resort,Restel,Cyprus,Larnaca District,Larnaca,4
+6067,Address Hotels Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,5
+6096,UNA Hotels Sardinia,Miki Travel,Italy,Sardinia,Sardinia,3
+6107,Bahia Principe Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,3
+6111,Valtur Sardinia,Miki Travel,Italy,Sardinia,Sardinia,5
+6139,Address Hotels Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+6143,Radisson Blu Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,4
+6147,Rixos Alanya,Summer Tour,Turkey,Antalya Province,Alanya,5
+6155,Sunrise Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,4
+6168,Hilton El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,5
+6169,Vila Vita Parc Lisbon,WebBeds,Portugal,Lisbon District,Lisbon,4
+6180,Rixos Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,4
+6183,Delphin Alanya,Summer Tour,Turkey,Antalya Province,Alanya,3
+6198,Radisson Blu Zadar,Go2Holiday,Croatia,Zadar County,Zadar,3
+6238,Radisson Blu Porec Resort,Go2Holiday,Croatia,Istria County,Porec,4
+6280,Constantinou Bros Limassol Resort,Restel,Cyprus,Limassol District,Limassol,4
+6313,Sunwing Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,4
+6344,Jumeirah Ras Al Khaimah Resort,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,4
+6378,Radisson Blu Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,4
+6409,Radisson Blu Ras Al Khaimah Resort,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,5
+6413,Occidental Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,4
+6419,Dom Pedro Porto,WebBeds,Portugal,Porto District,Porto,5
+6421,Sun Gardens Porec Resort,Go2Holiday,Croatia,Istria County,Porec,4
+6425,Radisson Blu Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,5
+6464,Crystal Hotels Alanya,Summer Tour,Turkey,Antalya Province,Alanya,5
+6502,Valamar Dubrovnik Resort,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,4
+6539,Bahia Principe Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,4
+6559,Barceló Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,5
+6582,Vila Vita Parc Vilamoura Resort,WebBeds,Portugal,Algarve,Vilamoura,5
+6590,Baglioni Hotels Sardinia,Miki Travel,Italy,Sardinia,Sardinia,4
+6617,Rixos Side,Summer Tour,Turkey,Antalya Province,Side,5
+6632,Pine Cliffs Lisbon,WebBeds,Portugal,Lisbon District,Lisbon,3
+6663,Hilton Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+6688,Mangia's Resorts Rome,Miki Travel,Italy,Lazio,Rome,5
+6718,Maxx Royal Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,4
+6728,Marriott Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,5
+6733,Th Resorts Venice,Miki Travel,Italy,Veneto,Venice,3
+6753,Address Hotels Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,3
+6764,Vidamar Resorts Lisbon,WebBeds,Portugal,Lisbon District,Lisbon,4
+6804,Iberostar Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,5
+6820,Pickalbatros Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,3
+6912,Tivoli Vilamoura Resort,WebBeds,Portugal,Algarve,Vilamoura,5
+6925,Coral Sea Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,3
+6930,Sunwing Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,4
+6934,NH Collection Sardinia Resort,Miki Travel,Italy,Sardinia,Sardinia,5
+6967,Rotana Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,5
+6977,Sunrise Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,4
+7043,Bluserena Sardinia,Miki Travel,Italy,Sardinia,Sardinia,5
+7046,Pestana Vilamoura,WebBeds,Portugal,Algarve,Vilamoura,4
+7054,Voyage Side,Summer Tour,Turkey,Antalya Province,Side,5
+7065,Sunrise Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+7071,Th Resorts Rome,Miki Travel,Italy,Lazio,Rome,5
+7118,Occidental Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,4
+7149,Valtur Sicily,Miki Travel,Italy,Sicily,Sicily,5
+7211,Rotana Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,3
+7216,Coral Sea Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,3
+7227,Baron Resort Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,4
+7252,Dana Beach Hurghada Resort,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,5
+7267,Hilton Dubai,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,5
+7275,Valamar Zadar Resort,Go2Holiday,Croatia,Zadar County,Zadar,4
+7291,Amadria Park Zadar,Go2Holiday,Croatia,Zadar County,Zadar,3
+7304,Baron Resort Makadi Bay Resort,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,3
+7311,Hilton Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,5
+7482,Pickalbatros Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,4
+7484,Maxx Royal Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,5
+7498,UNA Hotels Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,3
+7528,Radisson Blu Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,5
+7537,NH Collection Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,4
+7543,Pickalbatros Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,5
+7547,Valamar Makarska,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,5
+7548,Jumeirah Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,5
+7572,Coral Sea Taba,SunInternational Online,Egypt,South Sinai Governorate,Taba,4
+7592,Jumeirah Abu Dhabi Resort,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+7594,Constantinou Bros Ayia Napa Resort,Restel,Cyprus,Famagusta District,Ayia Napa,4
+7596,Meliá Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,5
+7625,Vila Vita Parc Porto,WebBeds,Portugal,Porto District,Porto,4
+7669,RIU Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,5
+7678,Sun Gardens Rovinj Resort,Go2Holiday,Croatia,Istria County,Rovinj,4
+7691,Rotana Sharjah Resort,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,5
+7693,Anassa Larnaca,Restel,Cyprus,Larnaca District,Larnaca,4
+7735,Meliá Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,4
+7790,Bluesun Makarska,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,4
+7797,Falkensteiner Split Resort,Go2Holiday,Croatia,Split-Dalmatia County,Split,5
+7812,Falkensteiner Makarska Resort,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,4
+7868,Crystal Hotels Antalya,Summer Tour,Turkey,Antalya Province,Antalya,4
+7882,Bluserena Rimini Resort,Miki Travel,Italy,Emilia-Romagna,Rimini,5
+7888,Radisson Blu Sharjah Resort,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,5
+7906,Bluserena Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,3
+7912,NH Collection Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,3
+7916,Coral Sea El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,4
+7939,H10 Hotels Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,4
+7965,Bluesun Split,Go2Holiday,Croatia,Split-Dalmatia County,Split,4
+7971,Pestana Cascais,WebBeds,Portugal,Lisbon District,Cascais,5
+7991,Bluesun Rovinj,Go2Holiday,Croatia,Istria County,Rovinj,4
+8007,Limak Kemer Resort,Summer Tour,Turkey,Antalya Province,Kemer,3
+8018,Mangia's Resorts Sicily,Miki Travel,Italy,Sicily,Sicily,4
+8019,Sunrise El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,3
+8062,RIU Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,4
+8066,Address Hotels Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,3
+8078,Amara Larnaca Resort,Restel,Cyprus,Larnaca District,Larnaca,3
+8102,Bluserena Amalfi Coast Resort,Miki Travel,Italy,Campania,Amalfi Coast,3
+8119,Hilton Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,4
+8135,Th Resorts Venice Resort,Miki Travel,Italy,Veneto,Venice,5
+8141,Louis Hotels Limassol Resort,Restel,Cyprus,Limassol District,Limassol,4
+8144,Address Hotels Ras Al Khaimah Resort,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,3
+8149,Rotana Ras Al Khaimah,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,4
+8172,Louis Hotels Protaras Resort,Restel,Cyprus,Famagusta District,Protaras,5
+8177,RIU Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,4
+8179,Rixos Bodrum,Summer Tour,Turkey,Mugla Province,Bodrum,4
+8195,Olympic Lagoon Protaras Resort,Restel,Cyprus,Famagusta District,Protaras,3
+8206,Radisson Blu Split Resort,Go2Holiday,Croatia,Split-Dalmatia County,Split,3
+8216,Pestana Albufeira Resort,WebBeds,Portugal,Algarve,Albufeira,4
+8239,Barut Hotels Antalya Resort,Summer Tour,Turkey,Antalya Province,Antalya,3
+8245,Atlantica Larnaca Resort,Restel,Cyprus,Larnaca District,Larnaca,3
+8251,Falkensteiner Makarska,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,4
+8260,Bahia Principe Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,5
+8305,Bluesun Porec,Go2Holiday,Croatia,Istria County,Porec,4
+8342,Tivoli Vilamoura,WebBeds,Portugal,Algarve,Vilamoura,4
+8350,RIU Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,4
+8373,Sun Gardens Split,Go2Holiday,Croatia,Split-Dalmatia County,Split,4
+8381,Anassa Protaras,Restel,Cyprus,Famagusta District,Protaras,5
+8397,Iberostar Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,5
+8428,Coral Sea Hurghada,SunInternational Online,Egypt,Red Sea Governorate,Hurghada,4
+8434,Pestana Albufeira,WebBeds,Portugal,Algarve,Albufeira,3
+8438,Constantinou Bros Protaras,Restel,Cyprus,Famagusta District,Protaras,5
+8461,Sun Gardens Makarska,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,5
+8478,Falkensteiner Split,Go2Holiday,Croatia,Split-Dalmatia County,Split,3
+8491,Maxx Royal Alanya,Summer Tour,Turkey,Antalya Province,Alanya,3
+8508,Titanic Antalya,Summer Tour,Turkey,Antalya Province,Antalya,3
+8517,Jaz Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,5
+8532,Rocco Forte Rimini Resort,Miki Travel,Italy,Emilia-Romagna,Rimini,4
+8541,Hilton Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,5
+8573,Baron Resort El Gouna,SunInternational Online,Egypt,Red Sea Governorate,El Gouna,5
+8579,H10 Hotels Benidorm,Hotelbeds,Spain,Valencian Community,Benidorm,5
+8611,Valamar Zadar,Go2Holiday,Croatia,Zadar County,Zadar,4
+8612,Sun Gardens Porec,Go2Holiday,Croatia,Istria County,Porec,4
+8619,Valtur Venice,Miki Travel,Italy,Veneto,Venice,3
+8633,Radisson Blu Zadar Resort,Go2Holiday,Croatia,Zadar County,Zadar,5
+8651,NH Collection Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,5
+8679,Louis Hotels Paphos Resort,Restel,Cyprus,Paphos District,Paphos,5
+8690,Dom Pedro Porto Resort,WebBeds,Portugal,Porto District,Porto,4
+8699,Louis Hotels Protaras,Restel,Cyprus,Famagusta District,Protaras,5
+8705,Bluserena Amalfi Coast,Miki Travel,Italy,Campania,Amalfi Coast,3
+8708,Olympic Lagoon Ayia Napa Resort,Restel,Cyprus,Famagusta District,Ayia Napa,5
+8711,Address Hotels Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,4
+8744,Barceló Costa del Sol,Hotelbeds,Spain,Andalusia,Costa del Sol,3
+8749,H10 Hotels Tenerife,Hotelbeds,Spain,Canary Islands,Tenerife,3
+8753,Vidamar Resorts Porto,WebBeds,Portugal,Porto District,Porto,5
+8758,Baglioni Hotels Venice,Miki Travel,Italy,Veneto,Venice,5
+8777,Radisson Blu Dubrovnik,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,4
+8784,Falkensteiner Dubrovnik,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,4
+8800,Tivoli Lisbon,WebBeds,Portugal,Lisbon District,Lisbon,4
+8827,Vidamar Resorts Albufeira Resort,WebBeds,Portugal,Algarve,Albufeira,4
+8843,Vidamar Resorts Lisbon Resort,WebBeds,Portugal,Lisbon District,Lisbon,5
+8921,Th Resorts Sicily Resort,Miki Travel,Italy,Sicily,Sicily,5
+8933,Tivoli Porto,WebBeds,Portugal,Porto District,Porto,3
+8939,Amadria Park Rovinj Resort,Go2Holiday,Croatia,Istria County,Rovinj,3
+8953,Barceló Fuerteventura,Hotelbeds,Spain,Canary Islands,Fuerteventura,3
+9004,Delphin Side,Summer Tour,Turkey,Antalya Province,Side,4
+9031,Th Resorts Rimini Resort,Miki Travel,Italy,Emilia-Romagna,Rimini,5
+9041,Pine Cliffs Vilamoura,WebBeds,Portugal,Algarve,Vilamoura,5
+9042,Vidamar Resorts Porto Resort,WebBeds,Portugal,Porto District,Porto,5
+9056,Constantinou Bros Paphos Beach,Restel,Cyprus,Paphos District,Paphos,3
+9085,Jaz Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,4
+9090,Anassa Protaras Resort,Restel,Cyprus,Famagusta District,Protaras,4
+9099,Falkensteiner Porec,Go2Holiday,Croatia,Istria County,Porec,4
+9179,Sunrise Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,5
+9199,Atlantica Ayia Napa Resort,Restel,Cyprus,Famagusta District,Ayia Napa,5
+9270,Sun Gardens Zadar,Go2Holiday,Croatia,Zadar County,Zadar,5
+9280,Delphin Marmaris,Summer Tour,Turkey,Mugla Province,Marmaris,4
+9288,Delphin Antalya,Summer Tour,Turkey,Antalya Province,Antalya,4
+9289,UNA Hotels Sicily,Miki Travel,Italy,Sicily,Sicily,3
+9308,Ajman Saray Ras Al Khaimah Resort,HotelGTA,United Arab Emirates,Ras Al Khaimah Emirate,Ras Al Khaimah,5
+9346,Rotana Sharjah,HotelGTA,United Arab Emirates,Sharjah Emirate,Sharjah,4
+9348,Rixos Marsa Alam,SunInternational Online,Egypt,Red Sea Governorate,Marsa Alam,5
+9379,Jumeirah Fujairah,HotelGTA,United Arab Emirates,Fujairah Emirate,Fujairah,5
+9423,Iberostar Costa Brava,Hotelbeds,Spain,Catalonia,Costa Brava,4
+9479,Iberostar Gran Canaria,Hotelbeds,Spain,Canary Islands,Gran Canaria,5
+9486,Falkensteiner Rovinj,Go2Holiday,Croatia,Istria County,Rovinj,4
+9502,Olympic Lagoon Paphos Resort,Restel,Cyprus,Paphos District,Paphos,5
+9518,Marriott Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,5
+9540,Falkensteiner Dubrovnik Resort,Go2Holiday,Croatia,Dubrovnik-Neretva County,Dubrovnik,5
+9548,NH Collection Sicily Resort,Miki Travel,Italy,Sicily,Sicily,5
+9565,Voyage Antalya,Summer Tour,Turkey,Antalya Province,Antalya,3
+9595,Tivoli Cascais,WebBeds,Portugal,Lisbon District,Cascais,5
+9666,Barut Hotels Kemer,Summer Tour,Turkey,Antalya Province,Kemer,4
+9698,Pestana Porto,WebBeds,Portugal,Porto District,Porto,5
+9702,Amadria Park Split,Go2Holiday,Croatia,Split-Dalmatia County,Split,5
+9728,Baglioni Hotels Sicily,Miki Travel,Italy,Sicily,Sicily,4
+9751,Hilton Makadi Bay,SunInternational Online,Egypt,Red Sea Governorate,Makadi Bay,5
+9779,Vila Vita Parc Funchal (Madeira),WebBeds,Portugal,Madeira,Funchal (Madeira),4
+9785,Jumeirah Abu Dhabi,HotelGTA,United Arab Emirates,Abu Dhabi Emirate,Abu Dhabi,4
+9786,Bahia Principe Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,3
+9808,Limak Alanya,Summer Tour,Turkey,Antalya Province,Alanya,4
+9817,NH Collection Rome Resort,Miki Travel,Italy,Lazio,Rome,5
+9821,Jumeirah Dubai Resort,HotelGTA,United Arab Emirates,Dubai Emirate,Dubai,4
+9830,Coral Sea Sharm El Sheikh,SunInternational Online,Egypt,South Sinai Governorate,Sharm El Sheikh,5
+9834,H10 Hotels Ibiza,Hotelbeds,Spain,Balearic Islands,Ibiza,3
+9837,Rocco Forte Rimini,Miki Travel,Italy,Emilia-Romagna,Rimini,5
+9847,Anassa Larnaca Resort,Restel,Cyprus,Larnaca District,Larnaca,5
+9849,Amadria Park Makarska Resort,Go2Holiday,Croatia,Split-Dalmatia County,Makarska,3
+9856,NH Collection Palma de Mallorca,Hotelbeds,Spain,Balearic Islands,Palma de Mallorca,5
+9890,Amadria Park Split Resort,Go2Holiday,Croatia,Split-Dalmatia County,Split,4
+9900,Rixos Belek,Summer Tour,Turkey,Antalya Province,Belek,5
+9922,Olympic Lagoon Paphos,Restel,Cyprus,Paphos District,Paphos,4
+9976,Bluesun Zadar,Go2Holiday,Croatia,Zadar County,Zadar,4
