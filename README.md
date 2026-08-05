@@ -50,6 +50,7 @@ Example transformation: "Booking Create Error: Brak możliwości założenia rez
 - 3 monthly booking files (March–May 2026), ~5,000 records
 - Hotel reference table (500 hotels)
 - Provider reference table (8 travel providers)
+  
 Note: the dataset contains only failed booking attempts
   
 
