@@ -17,23 +17,22 @@ Which providers, countries, and error types generate the most booking failures �
 Note: dataset contains only FAILED booking attempts — no success data, so metrics reflect error structure, not conversion rate.
 
 ## 🧹 Data Cleaning (Power Query)
-- Inconsistent price formats (comma decimals, "PLN" suffix, missing values) → standardized to Decimal Number.
-- Standardized error messages: translated mixed Polish/English text to English, removed redundant technical prefixes (e.g. "Booking Create 
-  Error:"), and extracted clean error descriptions into a separate dimension table (`dim_error_types`).
+- Standardized inconsistent price formats (comma decimals, "PLN" currency suffix, missing values, occasional negative values) → converted to a clean Decimal Number column.
+- Cleaned mixed casing and stray whitespace in hotel/provider identifier fields (Text.Trim / Text.Lower)
+- Standardized error messages: translated mixed Polish/English text to English, removed redundant technical prefixes (e.g. "Booking Create Error:"), and extracted clean error descriptions into a separate dimension table (`dim_error_types`).
 Example transformation: "Booking Create Error: Brak możliwości założenia rezerwacji winterfejsie." → "Unable to create a reservation in interface"
-- Removed `hotelcode` column from the fact table — redundant with `Hotel ID`, which already serves as the unique key linking to `dim_hotels`
-- Missing Error ID values → resolved via Merge Queries with clean error reference table.
-- Extracted unique client emails into a separate `dim_client` dimension table (with surrogate Client ID), replacing raw email in the fact table — enables accurate distinct-client counting and avoids duplicated email text across ~5,000 fact rows
-- Identified rows that are fully identical across all fields (Trip ID, Reservation Date, Error ID, Price). Because the dataset only records
-  date (not timestamp), these cannot be reliably distinguished between (a) technical log duplication or (b) a genuine same-day repeat attempt 
-  by the same client. Given this ambiguity, these rows were NOT removed, to avoid understating real repeat-attempt volume.
-- Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component)
+- Removed a redundant hotelcode column from the fact table — Hotel ID already serves as the unique key linking to dim_hotels.
+- Resolved missing Error ID values via Merge Queries against a cleaned reference table, then removed duplicate reference rows.
+- Extracted unique client emails into a separate dim_client dimension table (with a surrogate Client ID), replacing raw email text in the fact table — enables accurate distinct-client counting.
+- Identified rows that are fully identical across all fields (Trip ID, Reservation Date, Error ID, Price). Because the dataset only records date (not timestamp), these cannot be reliably distinguished between (a) technical log duplication or (b) a genuine same-day repeat attempt by the same client. Given this ambiguity, these rows were NOT removed, to avoid understating real repeat-attempt volume.
+- Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component).
 
 ## 🗂️ Data Model
 <img width="1640" height="752" alt="image" src="https://github.com/user-attachments/assets/b5fa3b2b-1d26-4eb2-8411-d188488aef7f" />
 
 - Star schema: fact table `fact_booking_errors` + dimensions `dim_hotels`, `dim_providers`, `dim_error_types`, `dim_date`
 - Removed `MainDestination` from `dim_providers` to avoid duplicating geographic data already present in `dim_hotels[Country]` (single source of truth principle)
+- dim_date is marked as a Date Table and linked to Reservation Date (the date the booking attempt occurred), not the trip's Start/End Date, since the analysis focuses on when errors happen, not when trips occur
 
 ## 📈 Dashboard Pages
 ### 1. Overview
@@ -50,10 +49,14 @@ Ranks provider–error combinations by volume and financial impact, visualizes p
 
 
 ## 💡 Key Insights
-- 
+- The problem is concentrated, not evenly spread. The top 3 investigation areas — allotment synchronization (SunInternational Online, Summer Tour, Hotelbeds), stop-sale downloads, and pricing updates — account for approximately 35% of all booking errors, despite involving only 3 of 8 providers.
+- A single combination stands out: SunInternational Online in Egypt ("Not enough allotment") accounts for 277 failed attempts alone — the largest single concentration in the dataset, representing 5.5% of all errors and €590K in affected booking value.
+- Errors are not concentrated in specific hotels. The top 10 hotels by error count show similar volumes (28–32 errors each), with no clear outlier property — indicating the issue is systemic at the provider/integration level rather than isolated to specific hotels.
+- Total financial exposure: failed booking attempts across the 3-month period represent approximately €10.81M in booking value across all 8 providers.
 
 ## 🛠️ Tools Used
 Power BI, Power Query (M), DAX
 
 ## 📁 How to Open
-
+1. Download the .pbix file
+2. Open in Power BI Desktop
