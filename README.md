@@ -5,14 +5,13 @@ Data analysis focused on identifying the root causes of hotel booking errors acr
 
 
 ## 🎯 Business Question
-Which providers/hotels generate the most booking failures, and what is the underlying cause, so operations can prioritize fixes.
+Which providers, countries, and error types generate the most booking failures — by volume and financial impact — and where should investigation be prioritized first?
 
 ## 📊 Data Source
 - Synthetic dataset simulating a real booking error log
 - 3 monthly files (March–May 2026), ~5,000 records
 - Supporting dimension table: 500 hotels with provider, country, region, city, stars
 - Supporting dimension table: 8 travel providers (provider ID, provider name)
-- Provider details (provider name) are kept in a separate dimension table rather than embedded in the fact table, following star schema design 
   (single source of truth, avoids duplicated provider names across 5,000 rows)
   
 Note: dataset contains only FAILED booking attempts — no success data, so metrics reflect error structure, not conversion rate.
@@ -31,18 +30,23 @@ Example transformation: "Booking Create Error: Brak możliwości założenia rez
 - Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component)
 
 ## 🗂️ Data Model
-<img width="1596" height="732" alt="image" src="https://github.com/user-attachments/assets/2f7bd287-a607-415e-8be3-c31c9520b336" />
-
+<img width="1640" height="752" alt="image" src="https://github.com/user-attachments/assets/b5fa3b2b-1d26-4eb2-8411-d188488aef7f" />
 
 - Star schema: fact table `fact_booking_errors` + dimensions `dim_hotels`, `dim_providers`, `dim_error_types`, `dim_date`
 - Removed `MainDestination` from `dim_providers` to avoid duplicating geographic data already present in `dim_hotels[Country]` (single source of truth principle)
 
 ## 📈 Dashboard Pages
 ### 1. Overview
+<img width="1397" height="785" alt="image" src="https://github.com/user-attachments/assets/91132970-a4c1-4974-83cd-d4f4de61e8b0" />
+High-level KPIs (Total Errors, Financial Impact, Active Providers, Affected Hotels, Avg Booking Price), monthly error trend, error distribution by provider and error type.
 
 ### 2. Root Cause Analysis
+<img width="1395" height="782" alt="image" src="https://github.com/user-attachments/assets/fa6ede58-0dee-48b5-bdf3-b44e30855990" />
+Provider × Error Type matrix (heatmap), an interactive decomposition tree for drilling from total errors down to provider/country/error combinations, top hotels by error count, and financial impact by provider.
 
 ### 3. Action Plan
+<img width="1395" height="783" alt="image" src="https://github.com/user-attachments/assets/e7e5c6fb-660d-43a4-8cab-901e82c0455d" />
+Ranks provider–error combinations by volume and financial impact, visualizes providers on a volume-vs-impact priority matrix, and lays out the top 3 investigation priorities with supporting figures.
 
 
 ## 💡 Key Insights
