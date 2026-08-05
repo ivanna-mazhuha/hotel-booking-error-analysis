@@ -15,7 +15,7 @@ Which providers, countries, and error types generate the most booking failures â
 ## ðŸ“ˆ Dashboard Pages
 ### Overview
 <img width="1397" height="785" alt="image" src="https://github.com/user-attachments/assets/91132970-a4c1-4974-83cd-d4f4de61e8b0" />
-High-level KPIs (Total Errors, Financial Impact, Active Providers, Affected Hotels, Avg Booking Price), monthly error trend, error distribution by provider and error type.
+High-level KPIs (Total Errors, Price, Active Providers, Affected Hotels, Avg Booking Price), monthly error trend, error distribution by provider and error type.
 
 ### Root Cause Analysis
 <img width="1395" height="782" alt="image" src="https://github.com/user-attachments/assets/fa6ede58-0dee-48b5-bdf3-b44e30855990" />
