@@ -13,19 +13,21 @@ Which providers, countries, and error types generate the most booking failures �
 - Total financial exposure: failed booking attempts across the 3-month period represent approximately €10.81M in booking value across all 8 providers.
 
 ## 📈 Dashboard Pages
-### 1. Overview
+### Overview
 <img width="1397" height="785" alt="image" src="https://github.com/user-attachments/assets/91132970-a4c1-4974-83cd-d4f4de61e8b0" />
 High-level KPIs (Total Errors, Financial Impact, Active Providers, Affected Hotels, Avg Booking Price), monthly error trend, error distribution by provider and error type.
 
-### 2. Root Cause Analysis
+### Root Cause Analysis
 <img width="1395" height="782" alt="image" src="https://github.com/user-attachments/assets/fa6ede58-0dee-48b5-bdf3-b44e30855990" />
 Provider × Error Type matrix (heatmap), an interactive decomposition tree for drilling from total errors down to provider/country/error combinations, top hotels by error count, and financial impact by provider.
 
-### 3. Action Plan
+### Action Plan
 <img width="1395" height="783" alt="image" src="https://github.com/user-attachments/assets/e7e5c6fb-660d-43a4-8cab-901e82c0455d" />
 Ranks provider–error combinations by volume and financial impact, visualizes providers on a volume-vs-impact priority matrix, and lays out the top 3 investigation priorities with supporting figures.
 
 ## 🗂️ Data Model
+The dashboard uses a star schema consisting of one fact table and four dimension tables.
+
 <img width="1640" height="752" alt="image" src="https://github.com/user-attachments/assets/b5fa3b2b-1d26-4eb2-8411-d188488aef7f" />
 
 - Star schema: fact table `fact_booking_errors` + dimensions `dim_hotels`, `dim_providers`, `dim_error_types`, `dim_date`
@@ -34,23 +36,22 @@ Ranks provider–error combinations by volume and financial impact, visualizes p
 
 ## 🧹 Data Cleaning (Power Query)
 - Standardized inconsistent price formats (comma decimals, "PLN" currency suffix, missing values, occasional negative values) → converted to a clean Decimal Number column.
-- Cleaned mixed casing and stray whitespace in hotel/provider identifier fields (Text.Trim / Text.Lower).
+- Cleaned mixed casing and stray whitespace in hotel/provider identifier fields.
 - Standardized error messages: translated mixed Polish/English text to English, removed redundant technical prefixes (e.g. "Booking Create Error:"), and extracted clean error descriptions into a separate dimension table (`dim_error_types`).
 Example transformation: "Booking Create Error: Brak możliwości założenia rezerwacji winterfejsie." → "Unable to create a reservation in interface".
 - Removed a redundant hotelcode column from the fact table — Hotel ID already serves as the unique key linking to dim_hotels.
 - Resolved missing Error ID values via Merge Queries against a cleaned reference table, then removed duplicate reference rows.
 - Extracted unique client emails into a separate dim_client dimension table (with a surrogate Client ID), replacing raw email text in the fact table — enables accurate distinct-client counting.
-- Identified rows that are fully identical across all fields (Trip ID, Reservation Date, Error ID, Price). Because the dataset only records date (not timestamp), these cannot be reliably distinguished between (a) technical log duplication or (b) a genuine same-day repeat attempt by the same client. Given this ambiguity, these rows were NOT removed, to avoid understating real repeat-attempt volume.
+- Retained fully identical rows because the source data contains dates only (no timestamps), making it impossible to distinguish between technical duplicates and genuine same-day repeat booking attempts.
 - Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component).
 
 ## 📊 Data Source
 - Synthetic dataset simulating a real booking error log
-- 3 monthly files (March–May 2026), ~5,000 records
-- Supporting dimension table: 500 hotels with provider, country, region, city, stars
-- Supporting dimension table: 8 travel providers (provider ID, provider name)
-  (single source of truth, avoids duplicated provider names across 5,000 rows)
+- 3 monthly booking files (March–May 2026), ~5,000 records
+- Hotel reference table (500 hotels)
+- Provider reference table (8 travel providers)
+Note: the dataset contains only failed booking attempts
   
-Note: dataset contains only FAILED booking attempts — no success data, so metrics reflect error structure, not conversion rate.
 
 ## 🛠️ Tools Used
 Power BI, Power Query (M), DAX
