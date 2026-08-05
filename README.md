@@ -1,8 +1,7 @@
 # Hotel Booking Error Analysis
 
 ## 📌 Project Overview
-Data analysis focused on identifying the root causes of hotel booking errors across 8 hotel providers and improving booking quality.
-
+Power BI dashboard analyzing failed hotel booking attempts across 8 travel providers, built to identify where booking errors concentrate and support prioritized investigation. This is a synthetic dataset designed to closely resemble a real booking-error log.
 
 ## 🎯 Business Question
 Which providers, countries, and error types generate the most booking failures — by volume and financial impact — and where should investigation be prioritized first?
@@ -18,9 +17,9 @@ Note: dataset contains only FAILED booking attempts — no success data, so metr
 
 ## 🧹 Data Cleaning (Power Query)
 - Standardized inconsistent price formats (comma decimals, "PLN" currency suffix, missing values, occasional negative values) → converted to a clean Decimal Number column.
-- Cleaned mixed casing and stray whitespace in hotel/provider identifier fields (Text.Trim / Text.Lower)
+- Cleaned mixed casing and stray whitespace in hotel/provider identifier fields (Text.Trim / Text.Lower).
 - Standardized error messages: translated mixed Polish/English text to English, removed redundant technical prefixes (e.g. "Booking Create Error:"), and extracted clean error descriptions into a separate dimension table (`dim_error_types`).
-Example transformation: "Booking Create Error: Brak możliwości założenia rezerwacji winterfejsie." → "Unable to create a reservation in interface"
+Example transformation: "Booking Create Error: Brak możliwości założenia rezerwacji winterfejsie." → "Unable to create a reservation in interface".
 - Removed a redundant hotelcode column from the fact table — Hotel ID already serves as the unique key linking to dim_hotels.
 - Resolved missing Error ID values via Merge Queries against a cleaned reference table, then removed duplicate reference rows.
 - Extracted unique client emails into a separate dim_client dimension table (with a surrogate Client ID), replacing raw email text in the fact table — enables accurate distinct-client counting.
