@@ -174,3 +174,30 @@ Since the dataset contains only booking dates (without timestamps),
 it is not possible to determine whether these records represent duplicate log entries
 or legitimate repeated booking attempts.
 */
+
+/*
+=========================================================
+Question 7
+What reference data is available to enrich the analysis?
+=========================================================
+*/
+
+SELECT *
+FROM hotels
+LIMIT 5;
+
+SELECT *
+FROM providers
+LIMIT 5;
+
+/*
+Conclusion:
+
+Conclusion:
+The analysis is supported by two lookup tables.
+• hotels contains hotel attributes, including hotel name,
+provider name, country, region, city, and star rating.
+• providers maps each ProviderID to a company name and its primary destination.
+These datasets will be joined with the booking error table 
+to enrich the analysis with geographical and provider information.
+*/
