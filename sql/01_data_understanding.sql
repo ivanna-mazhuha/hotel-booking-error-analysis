@@ -15,12 +15,27 @@ SELECT *
 FROM errors_march 
 LIMIT 5;
 
+SELECT *
+FROM hotels
+LIMIT 5;
+
+SELECT *
+FROM providers
+LIMIT 5;
+
 /*
 Conclusion:
-Initial look at the raw data shows 12 columns including booking dates,
-provider/hotel identifiers, error codes and messages, and price.
-Some columns (e.g. Price, message) show visible formatting 
-inconsistencies.
+Initial look at the raw data shows that table errors_march has 12 columns 
+including booking dates, provider/hotel identifiers, error codes and messages, and price.
+Some columns (e.g. Price, message) show visible formatting inconsistencies.
+
+Hotels table contains hotel attributes, including hotel name,
+provider name, country, region, city, and star rating.
+
+Providers table maps each ProviderID to a company name and its primary destination.
+Each provider is linked to a single primary destination country.
+
+These datasets will be joined to enrich the analysis with geographical and provider information.
 */
 
 /*
@@ -126,8 +141,9 @@ FROM errors_all;
 
 /*
 Conclusion:
-Checked all 12 columns for missing values. Only no, Hotelname, Price showed missing data (45, 155, 190 rows respectively) — 
-these will require handling before analysis. All other columns are fully populated.
+Checked all 12 columns for missing values. Only no, Hotelname, Price showed missing data 
+(45, 155, 190 rows respectively) — these will require handling before analysis. 
+All other columns are fully populated.
 */
 /*
 =========================================================
@@ -175,29 +191,4 @@ it is not possible to determine whether these records represent duplicate log en
 or legitimate repeated booking attempts.
 */
 
-/*
-=========================================================
-Question 7
-What reference data is available to enrich the analysis?
-=========================================================
-*/
 
-SELECT *
-FROM hotels
-LIMIT 5;
-
-SELECT *
-FROM providers
-LIMIT 5;
-
-/*
-Conclusion:
-
-Conclusion:
-The analysis is supported by two lookup tables.
-• hotels contains hotel attributes, including hotel name,
-provider name, country, region, city, and star rating.
-• providers maps each ProviderID to a company name and its primary destination.
-These datasets will be joined with the booking error table 
-to enrich the analysis with geographical and provider information.
-*/
