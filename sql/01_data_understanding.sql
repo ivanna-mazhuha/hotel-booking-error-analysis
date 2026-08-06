@@ -72,7 +72,7 @@ FROM errors_all;
 
 /*
 Conclusion:
-The dataset covers booking errors recorded between March 2, 2026
+The dataset covers booking errors recorded between March 1, 2026
 and May 31, 2026, matching the expected three-month reporting period.
 */
 /*
