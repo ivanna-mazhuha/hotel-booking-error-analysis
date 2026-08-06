@@ -39,7 +39,9 @@ The datasets can be safely combined using UNION ALL.
 */
 
 /*
-Combining the three monthly tables into a single dataset
+=========================================================
+Creating a unified analytical table
+=========================================================
 */
 CREATE TABLE errors_all AS
 SELECT * FROM errors_march
@@ -93,4 +95,75 @@ covering 492 hotels and 9 distinct error types.
 
 This provides sufficient coverage for provider-, hotel-, and
 error-level analysis.
+*/
+/*
+=========================================================
+Question 5
+Are there missing values across all columns?
+=========================================================
+*/
+SELECT
+    SUM(CASE WHEN Date IS NULL THEN 1 ELSE 0 END) AS missing_date,
+    SUM(CASE WHEN tripid IS NULL THEN 1 ELSE 0 END) AS missing_tripid,
+    SUM(CASE WHEN ClientEmail IS NULL OR ClientEmail = '' THEN 1 ELSE 0 END) AS missing_email,
+    SUM(CASE WHEN startdate IS NULL THEN 1 ELSE 0 END) AS missing_startdate,
+    SUM(CASE WHEN enddate IS NULL THEN 1 ELSE 0 END) AS missing_enddate,
+    SUM(CASE WHEN providerid IS NULL THEN 1 ELSE 0 END) AS missing_providerid,
+    SUM(CASE WHEN hotelcode IS NULL OR hotelcode = '' THEN 1 ELSE 0 END) AS missing_hotelcode,
+    SUM(CASE WHEN hotelid IS NULL THEN 1 ELSE 0 END) AS missing_hotelid,
+    SUM(CASE WHEN no IS NULL THEN 1 ELSE 0 END) AS missing_error_id,
+    SUM(CASE WHEN message IS NULL OR message = '' THEN 1 ELSE 0 END) AS missing_message,
+    SUM(CASE WHEN Hotelname IS NULL OR Hotelname = '' THEN 1 ELSE 0 END) AS missing_hotelname,
+    SUM(CASE WHEN Price IS NULL OR Price = '' THEN 1 ELSE 0 END) AS missing_price
+FROM errors_all;
+
+/*
+Conclusion:
+Checked all 12 columns for missing values. Only no, Hotelname, Price showed missing data (45, 155, 190 rows respectively) — 
+these will require handling before analysis. All other columns are fully populated.
+*/
+/*
+=========================================================
+Question 6
+Are there any fully duplicated booking records?
+=========================================================
+*/
+
+SELECT
+    Date,
+    tripid,
+    ClientEmail,
+    startdate,
+    enddate,
+    providerid,
+    hotelcode,
+    hotelid,
+    no,
+    message,
+    Hotelname,
+    Price,
+    COUNT(*) AS duplicate_count
+FROM errors_all
+GROUP BY
+    Date,
+    tripid,
+    ClientEmail,
+    startdate,
+    enddate,
+    providerid,
+    hotelcode,
+    hotelid,
+    no,
+    message,
+    Hotelname,
+    Price
+HAVING COUNT(*) > 1
+ORDER BY duplicate_count DESC;
+
+/*
+Conclusion:
+75 fully duplicated booking records were identified across all 12 columns.
+Since the dataset contains only booking dates (without timestamps), 
+it is not possible to determine whether these records represent duplicate log entries
+or legitimate repeated booking attempts.
 */
