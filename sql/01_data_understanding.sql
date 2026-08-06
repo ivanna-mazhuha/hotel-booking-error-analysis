@@ -1,4 +1,11 @@
 /*
+Project: Hotel Booking Error Analysis
+Purpose: Initial SQL exploration of raw booking error data before 
+         cleaning in Power Query and modeling in Power BI.
+Tool: DuckDB
+*/
+
+/*
 =========================================================
 Question 1
 What does the raw data actually look like?
