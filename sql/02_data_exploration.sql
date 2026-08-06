@@ -1,6 +1,8 @@
 /*
+=========================================================
 Question 1
-  What are the most common booking errors?
+What are the most common booking errors?
+=========================================================
 */
 
 SELECT
