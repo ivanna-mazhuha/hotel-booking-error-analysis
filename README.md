@@ -25,14 +25,12 @@ Provider × Error Type matrix (heatmap), an interactive decomposition tree for d
 <img width="1395" height="783" alt="image" src="https://github.com/user-attachments/assets/e7e5c6fb-660d-43a4-8cab-901e82c0455d" />
 Ranks provider–error combinations by volume and financial impact, visualizes providers on a volume-vs-impact priority matrix, and lays out the top 3 investigation priorities with supporting figures.
 
-## 🗂️ Data Model
-The dashboard uses a star schema consisting of one fact table and four dimension tables.
+## 🔍 SQL Exploration
+Before Power Query transformation, the raw data was explored using SQL (DuckDB) to validate the dataset structure, assess data quality, and identify initial patterns in provider- and hotel-level errors.
 
-<img width="1640" height="752" alt="image" src="https://github.com/user-attachments/assets/b5fa3b2b-1d26-4eb2-8411-d188488aef7f" />
-
-- Star schema: fact table `fact_booking_errors` + dimensions `dim_hotels`, `dim_providers`, `dim_error_types`, `dim_date`
-- Removed `MainDestination` from `dim_providers` to avoid duplicating geographic data already present in `dim_hotels[Country]` (single source of truth principle)
-- dim_date is marked as a Date Table and linked to Reservation Date (the date the booking attempt occurred), not the trip's Start/End Date, since the analysis focuses on when errors happen, not when trips occur
+SQL scripts:
+- [01_data_understanding.sql](sql/01_data_understanding.sql)
+- [02_data_exploration.sql](sql/02_data_exploration.sql)
 
 ## 🧹 Data Cleaning (Power Query)
 - Standardized inconsistent price formats (comma decimals, "PLN" currency suffix, missing values, occasional negative values) → converted to a clean Decimal Number column.
@@ -45,24 +43,27 @@ Example transformation: "Booking Create Error: Brak możliwości założenia rez
 - Retained fully identical rows because the source data contains dates only (no timestamps), making it impossible to distinguish between technical duplicates and genuine same-day repeat booking attempts.
 - Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component).
 
-## 🔍 SQL Exploration
-Before any cleaning was performed in Power Query, the raw data was explored using SQL (DuckDB) to validate structure, check data quality, and confirm early patterns in provider and hotel-level errors.
+## 🗂️ Data Model
+The dashboard uses a star schema consisting of one fact table and four dimension tables.
 
-SQL scripts:
-- [01_data_understanding.sql](sql/01_data_understanding.sql)
-- [02_data_exploration.sql](sql/02_data_exploration.sql)
+<img width="1640" height="752" alt="image" src="https://github.com/user-attachments/assets/b5fa3b2b-1d26-4eb2-8411-d188488aef7f" />
+
+- Star schema: fact table `fact_booking_errors` + dimensions `dim_hotels`, `dim_providers`, `dim_error_types`, `dim_date`
+- Removed `MainDestination` from `dim_providers` to avoid duplicating geographic data already present in `dim_hotels[Country]` (single source of truth principle)
+- dim_date is marked as a Date Table and linked to Reservation Date (the date the booking attempt occurred), not the trip's Start/End Date, since the analysis focuses on when errors happen, not when trips occur
 
 ## 📊 Data Source
 - Synthetic dataset simulating a real booking error log
-- 3 monthly booking files (March–May 2026), ~5,000 records
-- Hotel reference table (500 hotels)
+- 3 monthly booking files (March–May 2026), 5,075 booking error records combined
+- Hotel reference table (500 hotels, of which 492 appear in the error log)
 - Provider reference table (8 travel providers)
   
 Note: the dataset contains only failed booking attempts
 
 ## 🛠️ Tools Used
-Power BI, Power Query (M), DAX
+Power BI, Power Query (M), DAX, SQL (DuckDB)
 
 ## 📁 How to Open
 1. Download the .pbix file
 2. Open in Power BI Desktop
+3. For the SQL exploration, see the `/sql` folder — queries can be run in any SQL environment (developed using DuckDB)
