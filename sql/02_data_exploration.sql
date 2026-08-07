@@ -23,7 +23,6 @@ and multilingual descriptions).
 Examples include:
 • Not enough allotment
 • NOT ENOUGH ALLOTMENT
-•  Not enough allotment
 
 These inconsistencies indicate that the raw data requires standardization
 before meaningful error-level analysis can be performed.
@@ -47,6 +46,7 @@ ORDER BY total_errors DESC;
 
 /*
 Conclusion:
+
 Booking errors are recorded across all eight providers.
 
 SunInternational Online (1,091), Summer Tour (1,012), and Hotelbeds (946)
