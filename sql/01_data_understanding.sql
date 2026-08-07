@@ -83,6 +83,7 @@ table containing 5,075 booking error records.
 This unified table will be used for all subsequent exploration and
 data quality analysis.
 */
+
 /*
 =========================================================
 Question 3
@@ -99,6 +100,7 @@ Conclusion:
 The dataset covers booking errors recorded between March 1, 2026
 and May 31, 2026, matching the expected three-month reporting period.
 */
+
 /*
 =========================================================
 Question 4
@@ -118,6 +120,7 @@ covering 492 hotels and 9 distinct error types.
 This provides sufficient coverage for provider-, hotel-, and
 error-level analysis.
 */
+
 /*
 =========================================================
 Question 5
@@ -145,6 +148,7 @@ Checked all 12 columns for missing values. Only no, Hotelname, Price showed miss
 (45, 155, 190 rows respectively) — these will require handling before analysis. 
 All other columns are fully populated.
 */
+
 /*
 =========================================================
 Question 6
