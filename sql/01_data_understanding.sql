@@ -25,6 +25,7 @@ LIMIT 5;
 
 /*
 Conclusion:
+
 Initial look at the raw data shows that table errors_march has 12 columns 
 including booking dates, provider/hotel identifiers, error codes and messages, and price.
 Some columns (e.g. Price, message) show visible formatting inconsistencies.
@@ -52,6 +53,7 @@ DESCRIBE errors_may;
 
 /*
 Conclusion:
+
 All three monthly files have identical column names, column order,
 and data types (12 columns each). The only observation is that
 the Price column was imported as VARCHAR rather than a numeric type,
@@ -77,6 +79,7 @@ FROM errors_all;
 
 /*
 Conclusion:
+
 The three monthly datasets were successfully combined into a single
 table containing 5,075 booking error records.
 
@@ -97,6 +100,7 @@ FROM errors_all;
 
 /*
 Conclusion:
+
 The dataset covers booking errors recorded between March 1, 2026
 and May 31, 2026, matching the expected three-month reporting period.
 */
@@ -114,6 +118,7 @@ FROM errors_all;
 
 /*
 Conclusion:
+
 The dataset contains booking errors from 8 travel providers,
 covering 492 hotels and 9 distinct error types.
 
@@ -144,8 +149,9 @@ FROM errors_all;
 
 /*
 Conclusion:
-Checked all 12 columns for missing values. Only no, Hotelname, Price showed missing data 
-(45, 155, 190 rows respectively) — these will require handling before analysis. 
+
+Checked all 12 columns for missing values. Only no, Hotelname, Price showed missing
+data (45, 155, 190 rows respectively) — these will require handling before analysis. 
 All other columns are fully populated.
 */
 
@@ -189,6 +195,7 @@ ORDER BY duplicate_count DESC;
 
 /*
 Conclusion:
+
 75 fully duplicated booking records were identified across all 12 columns.
 Since the dataset contains only booking dates (without timestamps), 
 it is not possible to determine whether these records represent duplicate log entries
