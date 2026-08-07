@@ -1,4 +1,11 @@
 /*
+Project: Hotel Booking Error Analysis
+Purpose: Business-level exploration — provider and hotel error patterns
+         (performed on raw, uncleaned data prior to Power Query transformation)
+Tool: DuckDB
+*/
+
+/*
 =========================================================
 Question 1
 What are the most common booking errors?
@@ -37,35 +44,6 @@ Which providers generate the most booking errors?
 
 SELECT
     p.CompanyName,
-    COUNT(*) AS total_errors
-FROM errors_all e
-JOIN providers p
-    ON e.providerid = p.providerid
-GROUP BY p.CompanyName
-ORDER BY total_errors DESC;
-
-/*
-Conclusion:
-
-Booking errors are recorded across all eight providers.
-
-SunInternational Online (1,091), Summer Tour (1,012), and Hotelbeds (946)
-report the highest number of booking errors, while Restel (274) and Miki Travel (257)
-have the lowest error counts in the dataset.
-
-The distribution suggests noticeable differences between providers, which will be
-examined further in the next analysis step.
-*/
-
-/*
-=========================================================
-Question 3
-Are booking errors evenly distributed across providers?
-=========================================================
-*/
-
-SELECT
-    p.CompanyName,
     COUNT(*) AS total_errors,
     ROUND(
         COUNT(*) * 100.0 / (SELECT COUNT(*) FROM errors_all),
@@ -85,8 +63,6 @@ ORDER BY total_errors DESC;
 /*
 Conclusion:
 
-Booking errors are not evenly distributed across providers.
-
 The top three providers — SunInternational Online (21.5%), Summer Tour (19.94%),
 and Hotelbeds (18.64%) — account for approximately 60% of all booking errors.
 
@@ -97,7 +73,7 @@ prioritized on these integrations.
 
 /*
 =========================================================
-Question 4
+Question 3
 How many hotels are managed by each provider?
 =========================================================
 */
@@ -123,7 +99,7 @@ provider dominating simply because it manages substantially more hotels.
 
 /*
 =========================================================
-Question 5
+Question 4
 Which hotels generate the most booking errors?
 =========================================================
 */
