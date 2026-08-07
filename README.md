@@ -32,6 +32,7 @@ SQL scripts:
 - [01_data_understanding.sql](sql/01_data_understanding.sql)
 - [02_data_exploration.sql](sql/02_data_exploration.sql)
 
+
 ## 🧹 Data Cleaning (Power Query)
 - Standardized inconsistent price formats (comma decimals, "PLN" currency suffix, missing values, occasional negative values) → converted to a clean Decimal Number column.
 - Cleaned mixed casing and stray whitespace in hotel/provider identifier fields.
@@ -43,6 +44,7 @@ Example transformation: "Booking Create Error: Brak możliwości założenia rez
 - Retained fully identical rows because the source data contains dates only (no timestamps), making it impossible to distinguish between technical duplicates and genuine same-day repeat booking attempts.
 - Added `Trip Length` column ([End Date] - [Start Date], set to Whole Number type — safe conversion since source columns are Date-only, no time component).
 
+
 ## 🗂️ Data Model
 The dashboard uses a star schema consisting of one fact table and four dimension tables.
 
@@ -52,6 +54,7 @@ The dashboard uses a star schema consisting of one fact table and four dimension
 - Removed `MainDestination` from `dim_providers` to avoid duplicating geographic data already present in `dim_hotels[Country]` (single source of truth principle)
 - dim_date is marked as a Date Table and linked to Reservation Date (the date the booking attempt occurred), not the trip's Start/End Date, since the analysis focuses on when errors happen, not when trips occur
 
+
 ## 📊 Data Source
 - Synthetic dataset simulating a real booking error log
 - 3 monthly booking files (March–May 2026), 5,075 booking error records combined
@@ -60,8 +63,10 @@ The dashboard uses a star schema consisting of one fact table and four dimension
   
 Note: the dataset contains only failed booking attempts
 
+
 ## 🛠️ Tools Used
 Power BI, Power Query (M), DAX, SQL (DuckDB)
+
 
 ## 📁 How to Open
 1. Download the .pbix file
