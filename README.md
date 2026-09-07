@@ -70,5 +70,4 @@ Power BI, Power Query (M), DAX, SQL (DuckDB)
 
 ## 📁 How to Open
 1. Download the .pbix file
-2. Open in Power BI Desktop
-3. For the SQL exploration, see the `/sql` folder — queries can be run in any SQL environment (developed using DuckDB)
+2. For the SQL exploration, see the `/sql` folder — queries can be run in any SQL environment (developed using DuckDB)
